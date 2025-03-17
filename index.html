@@ -1,162 +1,126 @@
 <!DOCTYPE html>
- 
 <html lang="en">
- 
 <head>
- 
     <meta charset="UTF-8">
- 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
     <title>Banta Lawns</title>
- 
     <style>
- 
         body {
- 
             font-family: Arial, sans-serif;
- 
             background-image: url('./images/bg.jpg');
- 
             background-size: cover;
- 
             background-repeat: no-repeat;
- 
             margin: 0;
- 
             padding: 0;
- 
         }
- 
         .header {
-            font: 14px;
-
             width: 100%;
- 
             text-align: center;
- 
             padding: 20px;
- 
-            background-color: rgba(255, 255, 255, 0.8);
-}
- 
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
         .header div {
- 
             margin: 0 10px;
- 
         }
- 
+        .header .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+        .header .contact-info {
+            font-size: 16px;
+            color: #555;
+        }
         .content {
- 
             text-align: center;
- 
             margin-top: 50px;
- 
+            padding: 0 20px;
         }
- 
-        .table-container {
- 
-            display: flex;
- 
-            justify-content: center;
- 
-            margin: 20px 0;
- 
+        .content h1 {
+            font-size: 36px;
+            color: #333;
         }
- 
-        table {
- 
-            border-collapse: collapse;
- 
-        }
- 
-        td {
- 
-            padding: 10px;
- 
-        }
- 
-        .footer {
- 
-            width: 100%;
- 
-            text-align: center;
- 
+        .service-list, .service-area {
+            display: inline-block;
+            text-align: left;
+            margin: 20px;
             padding: 20px;
- 
             background-color: rgba(255, 255, 255, 0.8);
- 
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        .text-22-black {
-        font-size: 22px;
-        color: black;
-        font-weight: bold;
+        .service-list ul, .service-area ul {
+            list-style-type: none;
+            padding: 0;
         }
-
- 
+        .service-list li, .service-area li {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .image-gallery img {
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+        }
     </style>
- 
 </head>
- 
 <body>
- 
     <div class="header">
- 
-        <div class="text-22-black">bantalawns</div>
-
-        <div class="text-22-black">Licensed</div>
-
-        <div class="text-22-black">Insured</div>
- 
-        <div class="text-22-black">(515) 491-6820</div>
- 
-        <div class="text-22-black">tim@bantalawns.com</div>
- 
+        <div class="logo">Banta Lawns</div>
+        <div class="contact-info">Licensed & Insured | (515) 491-6820 | tim@bantalawns.com</div>
     </div>
- 
     <div class="content">
- 
         <h1>Banta Quality Lawn Care</h1>
- 
-        <div class="table-container">
-            <table class="text-22-black">
-                <tr><td>Mowing/Trimming/Edging</td></tr>
-                <tr><td>Professional Grade Fertilizing</td></tr>
-                <tr><td>Weed Prevention</td></tr>
-                <tr><td>Lawn Pesticide</td></tr>
-            </table>
+        <div class="service-list">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Mowing/Trimming/Edging</li>
+                <li>Professional Grade Fertilizing</li>
+                <li>Weed Prevention</li>
+                <li>Lawn Pesticide</li>
+            </ul>
         </div>
-
-        <div class="table-container">
-            <table class="text-22-black">
-                <tr><td>Service Area</td></tr>
-                <tr><td>Dallas Center-Grimes</td></tr>
-                <tr><td>Urbandale</td></tr>
-                <tr><td>Johnston</td></tr>
-                <tr><td>Polk City</td></tr></tr>
-            </table>
+        <div class="service-area">
+            <h2>Service Area</h2>
+            <ul>
+                <li>Dallas Center-Grimes</li>
+                <li>Urbandale</li>
+                <li>Johnston</li>
+                <li>Polk City</li>
+            </ul>
         </div>
-
-
-        <div class="table-container">
-            <table>
-                <tr>
-                    <td><img src="./images/image1.png" alt="Image 1" width="400"></td>
-                </tr>
-                <tr>
-                    <td><img src="./images/image2.png" alt="Image 2" width="400"></td>
-                </tr>
-                <tr>
-                    <td><img src="./images/image3.png" alt="Image 3" width="400"></td>
-                </tr>
-                <tr>
-                    <td><img src="./images/image4.png" alt="Image 4" width="400"></td>
-                </tr>
-                </table> 
+        <div class="image-gallery">
+            <img src="./images/image1.png" alt="Image 1" width="400">
+            <img src="./images/image2.png" alt="Image 2" width="400">
+            <img src="./images/image3.png" alt="Image 3" width="400">
+            <img src="./images/image4.png" alt="Image 4" width="400">
         </div>
-
-    
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Banta Lawns. All rights reserved.</p>
     </div>
 </body>
 </html>
